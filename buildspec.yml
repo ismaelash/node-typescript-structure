@@ -12,6 +12,7 @@ phases:
   post_build:
     commands:
       - echo Removing node modules folder...
+      # - rm -rf .gitignore
       - rm -rf node_modules/
 artifacts:
   files:
