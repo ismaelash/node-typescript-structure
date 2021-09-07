@@ -9,6 +9,7 @@ phases:
     commands:
       - echo Create build...
       - npm run build
+      # - cp package.json dist/
   post_build:
     commands:
       - echo Removing unnecessary files...
