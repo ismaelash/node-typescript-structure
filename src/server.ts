@@ -7,6 +7,8 @@ app.get('/', (request, response) => {
   return response.json({ message: 'Hello World' })
 })
 
-const port = process.env.PORT ?? 3333 
+const PORT = process.env.PORT ?? 3333 
 
-app.listen(port)
+app.listen(PORT, () => {
+  console.log(`server listening at http://localhost:${PORT}`)
+})
