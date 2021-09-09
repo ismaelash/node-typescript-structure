@@ -1,7 +1,6 @@
 {
   "name": "typescript-nodejs-backend",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Ismael Ash <contato@ismaelnascimento.com>",
   "license": "MIT",
   "scripts": {
@@ -9,6 +8,9 @@
     "start": "node dist/server.js",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts",
     "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",
@@ -35,8 +37,5 @@
     "ts-node-dev": "^1.0.0-pre.49",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^3.9.5"
-  },
-  "dependencies": {
-    "express": "^4.17.1"
   }
 }
