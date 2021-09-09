@@ -7,9 +7,9 @@ app.get('/', (request, response) => {
   return response.json({ message: 'backend works!' })
 })
 
-app.get('/users/:id', (request, response) => {
-  console.log("userId", req.params.id)
-  let user = UsersController.getOneUser(req.params.id)
+app.get('/users/:id', async (request, response) => {
+  console.log("userId", request.params.id)
+  let user = await UsersController.getOneUser(request.params.id)
   return response.json(user)
 })
 
